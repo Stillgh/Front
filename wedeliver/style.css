@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/* HEADER (first line) */
+header {
+    background: rgb(186, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    height: 4vh;
+    align-items: center;
+}
+div > i {
+    font-size: 12px;
+}
+
+.dropContent {
+    display:none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 3.35%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropContent a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-bottom: 0.5px solid white;
+    background: #ba0000;
+}
+.dropContent a:hover {
+    color: darkgoldenrod;
+    border-bottom-color: darkgoldenrod;
+}
+.dropdown:hover .dropContent {
+    display: block;
+}
+.dropdown:hover {
+    cursor: pointer;
+}
+.firstUl {
+    display: flex;
+    list-style-type: none;
+}
+.firstUl li:last-child {
+    padding-left: 3rem;
+}
+
+.firstUl li i {
+    padding-right: 0.5rem;
+}
+
+.firstUl li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*First section*/
+.first {
+    background: #ffcc00;
+    display: flex;
+    height: 8vh;
+    justify-content: space-evenly;
+}
+.secondUl {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.secondUl li a {
+    color: #cc3600;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1rem;
+    
+}
+.search {
+    background: #ba0000;
+    color: white;
+    height: 4vh;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    width: 2.3vw;
+    align-items: center;
+    box-shadow: 0px 7px rgba(188, 52, 52, 0.7);
+    cursor: pointer;
+    align-self: center;
+   
+}
+.search > i {
+    font-size: 15px;
+}
+
+.line {
+    border-bottom: 5px solid #ba0000;
+    position: absolute;
+    width: 106px;
+    top: 11.5vh;
+    height: 0;
+}
+
+/* Second section */
+
+.second {
+    background: url("http://www.vasaloppet.se/wp-content/uploads/sites/1/2015/02/nyhet_vinter_dhl_vasaloppet_900x459.jpg") no-repeat center center/cover;
+    height: 800px;
+
+}
+
+.gradient {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
+    height: 800px;
+    z-index: 5000;
+    width: 50%;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase {
+    
+   
+}
+.showcase > h1 {
+    color: white;
+    font-size: 70px;
+    padding-bottom: 
+}
+
+.border {
+    border-bottom: 3px solid #ffcc00;
+    height: 0px;
+    width: 100px;
+    margin: 40px 0;
+    
+}
+
+.showcase > p {
+    color: #fbc302;
+    font-size: 20px;
+}
+
+.showcase > span {
+    font-size: 18px;
+    color: white;
+    padding-right: 20px;
+    margin: 40px 0;
+    display: inline-block;
+}
+.dot {
+    color: #ffcc00;
+}
+
+button {
+    font-size: 12px;
+    height: 48px;
+    width: 189px;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.activeB {
+    width: 147px;
+    display: inline-block;
+    background-color: #ffcc00;  
+    border-color: #ffcc00;
+    color: #ba0000;
+    font-weight: 900;
+}
+
+.nonActive {
+    background: transparent;
+    color: white;
+    font-weight: 900;
+}
+
+/* Third section */
+
+.ser {
+    margin-left: 370px;
+}
+.serv {
+    font-size: 150px;
+    color: #f8f8f8;
+}
+
+.awSer {
+    position: relative; 
+    margin-top: -115px;
+    z-index: 5000;
+    color: #ba0000;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.serList {
+    display:flex;
+    margin-top: 75px;
+    justify-content: center;
+    align-items: sp
+}
+.serItem {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+}
+
+.serItem > h3 {
+    font-weight: 900;
+    color: #ba0000;
+    font-size: 20px;
+    padding-top: 24px;
+}
+
+.serItem i {
+    color: #ba0000;
+
+}
+
+.serItem p {
+    padding-top: 10px;
+}
+
+.serList a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.location {
+    background: #ba0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 25px;
+    width: 270px;
+}
+
+.location > h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.location > p {
+    color: white;
+    font-size: 16px;
+}
+
+hr {
+    border-color: #ffcc00;
+    border-width: 1.5px;
+    border-style: solid;  
+    width: 68px;
+}
+
+.dropLocation {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropLocCont {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*min-width: 160px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropLocation:hover .dropLocCont{
+    display: block;
+    width: 173px;
+    background: #9d0000;
+    color: white;
+}
+
+.dropLocCont > p {
+    border-bottom: 1px white solid;
+}
+.dropLocCont > p:hover {
+    border-bottom: 1px darkgoldenrod solid;
+    color: darkgoldenrod;
+}
+
+.dropLoc {
+    display:inline-flex;
+    width: 208px;
+}
+
+.dropLoc > span {
+  
+   border: 0px solid black;
+   height: 46px;
+   
+}
+.locChoice {
+    width: 157px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: #9d0000;
+    color: #ffffff;
+}
+
+.locArrow {
+    width: 48px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: #ffcc00;
+    color: #ba0000;
+}
+    
+.explore {
+    border-radius: 50px;
+    background: #ffcc00;
+    color: #ba0000;
+    font-weight: 900;
+    font-size: 12px;
+    border-color:  #ffcc00;
+}
+
+/* Fourth Section */
+.provider {
+    background: url(https://s.zagranitsa.com/images/guides/20685/original/40b08d74e523fd1c3bdb6dfda13afea5.jpg?1442242778) no-repeat center center/cover;
+    z-index: 1;
+}
+.providerBackground {
+    background: url(https://lh3.googleusercontent.com/hhTO-Bs1-9ISGFteiTYgd86nThyLYLnQiYiUEQHqikRIvwQWnhvotXfTUVG_ROPf1pwn=s170) no-repeat center center/cover;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.providerBackground > h3 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 144px;
+}
+
+.play {
+    display: inline-block;
+    width:69px;
+    height: 69px;
+    border-radius: 50%;
+    background: rgba(255, 204, 0, 1);
+    font-size: 35px;
+    color: #ba0000;
+    text-align: center;
+    border-color: #ffcc00;
+    margin-left: 50%;
+    margin-bottom: 175px;
+    margin-top: 50px;
+    
+}
+
+.threePic {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pic img {
+    display: inline-block;
+    height: 197px;
+    width: 370px;
+    margin-bottom: -3px;
+    margin-left: 10px;
+}
+
+/* Fifth section */
+.fifth {
+    display: flex;
+    justify-content: center;
+}
+.fifth .info {
+    width: 370px;
+    height: 208px;
+    margin-left: 10px;
+}
+
+.fifth h3 {
+    color: #ba0000;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.fifth ul li {
+    font-size: 16px;
+    list-style-type: none;
+}
+.fifth ul li:before {
+    color: #ffcc00;
+    padding-right: 10px;
+    content: "▶";
+}
+
+/* Input section */
+
+.inputfield {
+    margin: auto;
+    background: #ba0000;
+    width: 30vw;
+    
+}
+
+.headerInput {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.headerInput h4:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    color: white;
+}
+
+.headerInput h4:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    background: #ffcc00;
+    color: #ba0000;
+  
+}
+
+.form > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form {
+    display: flex;
+    align-items: center;
+}
+form > input {
+    background: #ba0000;
+    border: 1px solid white;
+    height: 2rem;
+    width: 80%;
+    margin-top: 1rem;
+
+}
+
+form > span {
+    background: #ffcc00;
+    border: 1px solid#ffcc00;
+    color: #ba0000;
+    height: 2rem;
+    width: 80%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.findServ {
+    border: 1px solid #ffcc00;
+    width: 80%;
+    margin: auto;
+    background: #a30000;
+}
+
+.findServ h5 {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 3.5rem;
+    padding-top: 1rem;
+}
+
+.findServ ul {
+    color: white;
+    list-style-type: none;
+    
+}
+.findServ ul li {
+    padding-left: 3.5rem;
+}
+.findServ ul li:before {
+    color: #ffcc00;
+    padding-right: 10px;
+    content: "▶";
+}
+
+/* penultimate */
+.penum {
+    background: #ba0000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.penum1 {
+    color: white;
+    font-size: 16px;
+}
+
+.penum1 h4 {
+    font-size: 30px;
+}
+
+.penumbtn {
+    display: inline-block;
+    background: #a00000;
+    color: white;
+    font-size: 12px;
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+  
+}
+
+.penumbtn span {
+    line-height: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Footer */
+.clients {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.clients div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #eedbdb;
+    width: 266px;
+    height: 124px;    
+    margin-left: 2rem;  
+    background: lightgray;
+}
+
+.clients div:nth-child(1) {
+    border: 3px solid #ba0000;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.combine {
+    display: flex;
+}
+
+.botText {
+    display: flex;
+    align-items: center;
+    
+}
+
+.bot-2,
+.bot-3,
+.bot-4 {
+    padding-right: 8rem;
+}
+
+.botText h4 {
+    color: #ba0000;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+.botText ul {
+    list-style: none;
+    font-size: 14px;
+}
+.botText ul li:nth-child(1) {
+    color: #ffcc00;
+}
+
+.bot-4 ul li:nth-child(1) {
+    color: #017edf;
+}
+
+.botText ul li::before {
+    color: #ba0000;
+    padding-right: 10px;
+    content: "▶";
+}
