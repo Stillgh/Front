@@ -1,3 +1,2 @@
 # Portfolio
-Hello 
-This is my portfolio
+responsive layout
