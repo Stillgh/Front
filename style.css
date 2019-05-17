@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+   }
+
+header {
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    height: 90px;
+}
+
+.dropMenu {
+    display: none;
+}
+.dropMenu p{
+    font-size: 25px;
+}
+.logo {
+    display: flex;   
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 42px;
+}
+
+.circle {
+    width: 42px;
+    height: 42px;
+    background: #5094f2;
+    border-radius: 50%;
+    text-align: center; 
+    margin-right: 10px;
+}
+
+.circle img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;   
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    width: 25vw;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar ul li:hover {
+    border-bottom: 4px solid #5094f2;
+    display: inline-flex;
+    height: 90px;
+    align-items: center;
+}
+
+/* Iphone section */
+
+.iphone {
+    height: 470px;
+    display: flex;
+    justify-content: space-around;
+    background: url('./img/backgr.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.cellphone {
+    justify-self: flex-start;
+    width: 20%;
+}
+
+.text {
+    color: #5094f2;
+    line-height: 3.5rem;
+    width: 30%;
+    padding-left: 100px;
+}
+.text h2 {
+    font-size: 42px;
+}
+
+.text p {
+    font-size: 26px;
+    padding-bottom: 2.7rem;
+}
+
+.btn {
+    background: #5094f2;
+    width: 168px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+}
+
+/* Showcase */
+.showcase {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.showcase h4 {
+    color: #5094f2;
+    font-size: 20px;
+}
+
+.showcase p{
+    font-size: 15px;
+}
+
+.img {
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue, 
+.red,
+.orange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;   
+}
+
+.iblue {
+    background: #5094f2;
+}
+
+.ired {
+    background: #d94748;
+}
+
+.iorange {
+    background: #ebbb11;
+}
+
+.txt {
+    line-height: 1.8rem;
+}
+
+/* Shopping cart */
+.shopping {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 74px;
+    align-content: center;
+}
+
+
+
+.shopping h2 {
+    font-size: 42px;
+    padding-bottom: 1rem;
+}
+
+.shopping h4 {
+    font-size: 28px;
+    padding-bottom: 1rem;
+}
+
+.shopping p {
+    font-size: 17px;
+}
+
+.shopText {
+    line-height: 2rem;
+    margin-top: 40px;
+    width: 492px;   
+}
+
+/* Footer */
+
+.footer {
+    font-size: 15px;
+    display: flex;
+    height: 95px;
+    border-top: 0.5px solid grey;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
